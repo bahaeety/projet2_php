@@ -1,5 +1,5 @@
 <?php
-require_once '../CLasses/user.php'; 
+require_once  __DIR__ . '/../CLasses/user.php'; 
 
 class User {
     private $db;

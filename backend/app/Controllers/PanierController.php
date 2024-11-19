@@ -1,6 +1,6 @@
 <?php
-require_once '../config/Headers.php';
-require_once '../Models/panierModel.php';
+require_once  __DIR__ . '/../../config/Headers.php';
+require_once  __DIR__ . '/../Models/panierModel.php';
 
 class PanierController {
     private $db;
@@ -52,7 +52,7 @@ class PanierController {
     }
 }
 
-require_once '../CLasses/Database.php';
+require_once  __DIR__ . '/../CLasses/Database.php';
 $db = Database::getConnection();
 if (isset($_GET['action'])) {
     $controller = new PanierController($db);

@@ -16,7 +16,6 @@ class Livre {
         $this->prix = $prix;
     }
 
-    // Getters
     public function getId() {
         return $this->id;
     }

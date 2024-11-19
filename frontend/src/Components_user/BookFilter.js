@@ -5,7 +5,6 @@ function BookFilter({ setCategory, setSort }) {
   return (
     <Form className="filter-container p-3 rounded shadow-sm bg-light mb-4">
       <Row className="gy-3 align-items-center">
-        {/* Filter by Category */}
         <Col xs={12} md={6}>
           <Form.Group controlId="categoryFilter">
             <Form.Label className="fw-bold text-muted">Category</Form.Label>
@@ -22,7 +21,6 @@ function BookFilter({ setCategory, setSort }) {
           </Form.Group>
         </Col>
 
-        {/* Sort by Price */}
         <Col xs={12} md={6}>
           <Form.Group controlId="sortFilter">
             <Form.Label className="fw-bold text-muted">Sort by</Form.Label>

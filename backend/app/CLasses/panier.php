@@ -12,7 +12,6 @@ class Panier {
         $this->quantity = $quantity;
     }
 
-    // Getters
     public function getCartId() {
         return $this->cartId;
     }

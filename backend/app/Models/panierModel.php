@@ -1,5 +1,5 @@
 <?php
-require_once '../CLasses/panier.php';
+require_once  __DIR__ . '/../CLasses/panier.php';
 
 class Panier {
     private $db;
@@ -8,7 +8,6 @@ class Panier {
         $this->db = $db ;
     }
 
-    // Récupérer tous les paniers
     public function getAllPaniers() {
         $query = "SELECT * FROM Panier";
         $stmt = $this->db->prepare($query);

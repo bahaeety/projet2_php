@@ -1,6 +1,6 @@
 <?php
-require_once '../config/Headers.php';
-require_once '../Models/livreModel.php';
+require_once  __DIR__ . '/../../config/Headers.php';
+require_once  __DIR__ . '/../Models/livreModel.php';
 
 class LivreController {
     private $db;
@@ -52,7 +52,7 @@ class LivreController {
     }
 }
 
-require_once '../CLasses/Database.php';
+require_once  __DIR__ . '/../CLasses/Database.php';
 
 $db = Database::getConnection(); 
 if (isset($_GET['action'])) {

@@ -4,7 +4,7 @@ class User {
     private $nom;
     private $email;
     private $password;
-    private $role; // Nouveau champ
+    private $role; 
 
     public function __construct($id, $nom, $email, $password, $role) {
         $this->id = $id;
@@ -14,7 +14,6 @@ class User {
         $this->role = $role;
     }
 
-    // Getters
     public function getId() {
         return $this->id;
     }
