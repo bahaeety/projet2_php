@@ -33,7 +33,7 @@ CREATE TABLE Panier (
     ID_livre INT NOT NULL,
     quantity INT NOT NULL DEFAULT 1,
     FOREIGN KEY (ID_user) REFERENCES user(ID_user),
-    FOREIGN KEY (ID_livre) REFERENCES Produits(ID_livre)
+    FOREIGN KEY (ID_livre) REFERENCES livres(ID_livre)
 );
 -- creer la table newsletter: 
 CREATE TABLE Newsletter (
@@ -70,7 +70,7 @@ INSERT INTO promo_codes (code, description,pourcentage) VALUES
 ('REDUCTION20', 'reduction de 20% sur les achats',10),
 ('HIVER24',"Promo d hiver ",40);
 
-INSERT INTO Produits(nom,PRIX,typeProduit,Sourceimg,Descrition) VALUES 
+INSERT INTO livres(nom,typeLivre,PRIX,Sourceimg,Descrition) VALUES 
 ('1052420-f', 'science', 79.61, '../DB/Images_Livres/science/1052420-f.jpg', 'Description for 1052420.'),
 ('1213473-f', 'roman', 75.36, '../DB/Images_Livres/roman/1213473-f.jpg', 'Description for 1213473.'),
 ('1261741-f', 'science', 61.86, '../DB/Images_Livres/science/1261741-f.jpg', 'Description for 1261741.'),
@@ -108,39 +108,3 @@ INSERT INTO Produits(nom,PRIX,typeProduit,Sourceimg,Descrition) VALUES
 ('956973-f', 'philosophie', 56.68, '../DB/Images_Livres/philosophie/956973-f.jpg', 'Description for 956973.'),
 ('la_nausse.jpg', 'philosophie', 80.33, '../DB/Images_Livres/philosophie/la_nausse.jpg', 'Description for la_nausse.jpg.');
 
-INSERT INTO livre (titre, categorie, image) VALUES ('1462516-f', 'Philosophie', '1462516-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('1521573-f', 'Philosophie', '1521573-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('2162278-f', 'Philosophie', '2162278-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3229558-f', 'Philosophie', '3229558-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3570872-f', 'Philosophie', '3570872-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3693952-f', 'Philosophie', '3693952-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3801100-f', 'Philosophie', '3801100-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('4011758-f', 'Philosophie', '4011758-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('4251544-gf', 'Philosophie', '4251544-gf.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('956972-f', 'Philosophie', '956972-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('956973-f', 'Philosophie', '956973-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('la nausse', 'Philosophie', 'la_nausse.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('1213473-f', 'Roman', '1213473-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('1554131-f', 'Roman', '1554131-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('1896221-f', 'Roman', '1896221-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('2146141-f', 'Roman', '2146141-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('2250705-f', 'Roman', '2250705-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3342040-f', 'Roman', '3342040-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3681290-f', 'Roman', '3681290-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3750028-f', 'Roman', '3750028-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3787525-f', 'Roman', '3787525-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3952179-f', 'Roman', '3952179-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('4266094-gf', 'Roman', '4266094-gf.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('5301-f', 'Roman', '5301-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('5863-f', 'Roman', '5863-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('612631-f', 'Roman', '612631-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('1052420-f', 'Science', '1052420-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('1261741-f', 'Science', '1261741-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('2264162-f', 'Science', '2264162-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('3628502-f', 'Science', '3628502-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('4182452-f', 'Science', '4182452-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('4200510-f', 'Science', '4200510-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('4218689-f', 'Science', '4218689-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('4219879-f', 'Science', '4219879-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('4253270-f', 'Science', '4253270-f.jpg');
-INSERT INTO livre (titre, categorie, image) VALUES ('4281661-f', 'Science', '4281661-f.jpg');
